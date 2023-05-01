@@ -1,0 +1,28 @@
+name: flugger
+description: A new Flutter blogging framework.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+isar_version: &isar_version 3.1.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^2.3.6
+  isar: *isar_version
+  isar_flutter_libs: *isar_version
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  isar_generator: *isar_version
+  build_runner: any
+
+flutter:
+  uses-material-design: true
